@@ -2,7 +2,7 @@ import org.junit.jupiter.api.Test;
 
 
 public class HomeWrk {
-    private String text = "Interest to pay for 10 years";
+    private String text = "Sum to pay ";
 
     @Test
     public void calculateLoanPayment () {
@@ -18,9 +18,9 @@ public class HomeWrk {
         double toPay3 = loanAmount * (1 + termInYears * interestRate3);
         double toPayTotal = toPay1+toPay2+toPay3;
 
-        System.out.println(text + toPay1);
-        System.out.println(toPay2);
-        System.out.println(toPay3);
+        System.out.println(text + "for 1st 10 yers"+ " " + toPay1);
+        System.out.println(text + "for 2nd 10 yers"+ " " + toPay2);
+        System.out.println(text + "for 3rd 10 yers"+ " " + toPay3);
         System.out.println("Tolal amount to pay" + " " + toPayTotal);
     }
 
