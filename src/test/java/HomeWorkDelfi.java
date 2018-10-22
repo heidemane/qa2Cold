@@ -20,16 +20,12 @@ public class HomeWorkDelfi {
         driver.manage().window().maximize();
         driver.get("http://www.delfi.lv");
         WebElement article = driver.findElement(ARTICLE_TITLE);
-        String articleText1 = article.getText();
 
         String articleText = article.getText();
-        driver.manage().window().maximize();
         driver.get("http://m.delfi.lv");
-        WebElement article = driver.findElement(MOBILE_ARTICLE_TITLE);
-        String articleText2 = article.getText();
+        article = driver.findElement(MOBILE_ARTICLE_TITLE);
 
-        Assertions.assertEquals(articleText1, articleText2, "Fatal Laura`s error!");
-
+        Assertions.assertEquals(articleText,"Fatal Laura`s error!");
 
     }
 }
