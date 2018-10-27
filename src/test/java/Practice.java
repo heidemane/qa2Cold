@@ -12,6 +12,8 @@ public class Practice {
     private final By ETHALON_TITLE = By.xpath(".//a[@class = 'top2012-title']");
     private final By ETHALON_COMMENT_COUNT = By.xpath(".//a[@class = 'comment-count']");
     private final By ETHALON_TITLE_COMMENT = By.xpath(".//h3[@class = 'top2012-title']");
+    private final By ARTICLE_PAGE_TITLE = By.xpath(".//h1[@class = 'article-title']");
+    private final By ARTICLE_PAGE_COMMENT = By.xpath(".//a[@class = 'comment-count']");
 
     @Test
     public void practice() {
@@ -35,13 +37,16 @@ public class Practice {
         int articleCommentCount = Integer.valueOf(thirdElCommentCount);
         //go to the 3rd article page
         thirdElement.findElement(ETHALON_TITLE).click();
-        //create article page title locator
-
-        //create article page comments locator
+        //create article page title locator DONE
+        //create article page comments locator DONE
         //get article title
+        String articlePageTitle = driver.findElement(ARTICLE_PAGE_TITLE).getText();
         //find comment count
+        String articlePageComment = driver.findElement(ARTICLE_PAGE_COMMENT).getText();
         //cut comment brackets
+        articlePageComment = articlePageTitle.substring(1, articlePageComment.length()-1);
         //convert comment count string to int
+        int articlePageCommentDigits = Integer.valueOf(articlePageComment);
         //check article titles with 1st page
         //check comment counts
         //go to the comment page
@@ -57,7 +62,7 @@ public class Practice {
         //cut comment brackets
         //convert comment count string to int
         //sum anonymous and registered comments
-        //check sum of anonymous and registered comments count with main pages comments count
+        //check sum of anonymous and registered comments count with main pages comments count funkcija- contains
 
 
     }
