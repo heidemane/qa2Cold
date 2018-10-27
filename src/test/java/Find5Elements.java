@@ -27,6 +27,7 @@ public class Find5Elements {
         driver.manage().window().maximize();
         driver.get("http://www.delfi.lv");
 
+
         //Find 5 elements
         List<WebElement> articles = driver.findElements(ARTICLE_TITLE);
         //Pārbaude
