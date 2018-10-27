@@ -34,11 +34,10 @@ public class DelfiMobileWebArticleCheck {
         List<String> mobArticles = new ArrayList<String>();
 
         for (int i = 0; i < 5; i++) {
-
             String mobarticleText = mobArticlesToCheck.get(i).getText();
             mobArticles.add(mobarticleText);
         }
 
-        Assertions.assertEquals(webArticles, mobArticles, "Mismach");
+        Assertions.assertEquals(webArticles, mobArticles, "Article titles are not equal");
     }
 }
