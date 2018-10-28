@@ -11,6 +11,8 @@ import java.util.List;
 
 public class Find5Elements {
     private final By ARTICLE_TITLE = By.xpath(".//a[@class = 'top2012-title']");
+    private final By ARTICLE_COMMENTS = By.xpath(".//a[@class = 'comment-count']");
+
     @Test
     public void find5element() {
         //Set up given titles to check
@@ -27,12 +29,20 @@ public class Find5Elements {
         driver.manage().window().maximize();
         driver.get("http://www.delfi.lv");
 
-
         //Find 5 elements
         List<WebElement> articles = driver.findElements(ARTICLE_TITLE);
         //Pārbaude
         for (int i = 0; i < 5; i++) {
-            Assertions.assertEquals(givenArticles.get(i), articles.get(i).getText(), "Title Nr." + (i+1) + "is not correct");
+            Assertions.assertEquals(givenArticles.get(i), articles.get(i).getText(), "Title Nr." + (i + 1) + "is not correct");
         }
+        List<String> givenComments = new ArrayList<String>();
+        givenComments.add("184");
+        givenComments.add("2");
+        givenComments.add("6");
+
+        List<WebElement> coments = driver.findElements(ARTICLE_COMMENTS);
+        
+
+
     }
 }
