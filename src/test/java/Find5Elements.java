@@ -41,7 +41,7 @@ public class Find5Elements {
         givenComments.add("6");
 
         List<WebElement> coments = driver.findElements(ARTICLE_COMMENTS);
-        
+
 
 
     }
