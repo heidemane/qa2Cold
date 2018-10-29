@@ -15,6 +15,9 @@ public class Practice {
     private final By ETHALON_TITLE_COMMENT = By.xpath(".//h3[@class = 'top2012-title']");
     private final By ARTICLE_PAGE_TITLE = By.xpath(".//h1[@class = 'article-title']");
     private final By ARTICLE_PAGE_COMMENT = By.xpath(".//a[@class = 'comment-count']");
+    private final By COMMENT_PAGE_TITLE = By.xpath(".//a[@class = 'comment-main-title-link']");
+    private final By REGISTRED_COMMENT_COUNT = By.xpath(".//div[@id='comments-listing']/div/a[1]/span");
+    private final By ANONYMOUS_COMMENT_COUNT = By.xpath(".//div[@id='comments-listing']/div/a[2]/span");
 
     @Test
     public void practice() {
@@ -53,10 +56,12 @@ public class Practice {
         //check comment counts
         Assertions.assertEquals(articleCommentCount, articlePageCommentDigits, "Main page comment count is not equal to article page coment count");
         //go to the comment page
-        //create comment pages title locator
-        //create registered users comment count locator
-        //create anonymous users comment count locator
+
+        //create comment pages title locator DONE
+        //create registered users comment count locator DONE
+        //create anonymous users comment count locator DONE
         //get comment pages title text
+        String commentPageArticle = driver.findElement(COMMENT_PAGE_TITLE).getText();
         //check comment page title with main page title (e-talon :))
         //find comment page registered users comment count
         //cut comment brackets
