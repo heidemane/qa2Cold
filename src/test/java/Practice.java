@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -44,11 +45,13 @@ public class Practice {
         //find comment count
         String articlePageComment = driver.findElement(ARTICLE_PAGE_COMMENT).getText();
         //cut comment brackets
-        articlePageComment = articlePageTitle.substring(1, articlePageComment.length()-1);
+        articlePageComment = articlePageComment.substring(1, articlePageComment.length()-1);
         //convert comment count string to int
         int articlePageCommentDigits = Integer.valueOf(articlePageComment);
         //check article titles with 1st page
+        Assertions.assertEquals(thirdArticle, articlePageTitle, "Main page article is not equal to page article");
         //check comment counts
+        Assertions.assertEquals(articleCommentCount, articlePageCommentDigits, "Main page comment count is not equal to article page coment count");
         //go to the comment page
         //create comment pages title locator
         //create registered users comment count locator
