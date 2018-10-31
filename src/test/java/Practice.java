@@ -56,13 +56,14 @@ public class Practice {
         //check comment counts
         Assertions.assertEquals(articleCommentCount, articlePageCommentDigits, "Main page comment count is not equal to article page coment count");
         //go to the comment page
-
+        driver.findElement(ARTICLE_PAGE_COMMENT).click();
         //create comment pages title locator DONE
         //create registered users comment count locator DONE
         //create anonymous users comment count locator DONE
         //get comment pages title text
         String commentPageArticle = driver.findElement(COMMENT_PAGE_TITLE).getText();
         //check comment page title with main page title (e-talon :))
+
         //find comment page registered users comment count
         //cut comment brackets
         //convert comment count string to int
