@@ -77,8 +77,8 @@ public class Practice {
         //convert comment count string to int
         int anonymousUserCommentCountInt = Integer.valueOf(anonymousUsersCommentCount);
         //sum anonymous and registered comments
-        String totalComentPageCommentCount = anonymousUsersCommentCount + registredUsersCommentCount;
+        Integer totalComentPageCommentCount = anonymousUserCommentCountInt + registredUsersComentCountInt;
         //check sum of anonymous and registered comments count with main pages comments count funkcija- contains
-
+        Assertions.assertEquals(totalComentPageCommentCount, articlePageComment, "Comment page comment count are net equal to main page comment count");
     }
 }
