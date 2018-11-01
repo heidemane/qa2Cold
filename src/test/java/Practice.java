@@ -54,7 +54,7 @@ public class Practice {
         //check article titles with 1st page
         Assertions.assertEquals(thirdArticle, articlePageTitle, "Main page article is not equal to page article");
         //check comment counts
-        Assertions.assertEquals(articleCommentCount, articlePageCommentDigits, "Main page comment count is not equal to article page coment count");
+        Assertions.assertEquals(articleCommentCount, articlePageCommentDigits, "Main page comment count is not equal to article page comment count");
         //go to the comment page
         driver.findElement(ARTICLE_PAGE_COMMENT).click();
         //create comment pages title locator DONE
@@ -63,16 +63,22 @@ public class Practice {
         //get comment pages title text
         String commentPageArticle = driver.findElement(COMMENT_PAGE_TITLE).getText();
         //check comment page title with main page title (e-talon :))
-
+        Assertions.assertEquals(commentPageArticle, thirdArticle, "Coment page title and Article Page title are not equals");
         //find comment page registered users comment count
+        String registredUsersCommentCount = driver.findElement(REGISTRED_COMMENT_COUNT).getText();
         //cut comment brackets
+        registredUsersCommentCount = registredUsersCommentCount.substring(1, registredUsersCommentCount.length()-1);
         //convert comment count string to int
+        int registredUsersComentCountInt = Integer.valueOf(registredUsersCommentCount);
         //find comment page anonymous users comment count
+        String anonymousUsersCommentCount = driver.findElement(ANONYMOUS_COMMENT_COUNT).getText();
         //cut comment brackets
+        anonymousUsersCommentCount = anonymousUsersCommentCount.substring(1, anonymousUsersCommentCount.length()-1);
         //convert comment count string to int
+        int anonymousUserCommentCountInt = Integer.valueOf(anonymousUsersCommentCount);
         //sum anonymous and registered comments
+        String totalComentPageCommentCount = anonymousUsersCommentCount + registredUsersCommentCount;
         //check sum of anonymous and registered comments count with main pages comments count funkcija- contains
-
 
     }
 }
