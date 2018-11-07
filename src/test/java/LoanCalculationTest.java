@@ -1,7 +1,7 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class LoanHomeWork {
+public class LoanCalculationTest {
     private double amountClientNeeds = 3000;
     private double amountToPay = 5400;
 
