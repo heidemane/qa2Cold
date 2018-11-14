@@ -12,11 +12,11 @@ public class ArticlePage {
 
     }
 
-    public String getTitle() {
-        return baseFunc.getElement(TITLE).getText();
-    }
-
-    public Integer getCommentCount() {
-
-    }
+//    public String getTitle() {
+//        return baseFunc.getElement(TITLE).getText();
+//    }
+//
+//    public Integer getCommentCount() {
+//
+//    }
 }
