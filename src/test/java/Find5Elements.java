@@ -4,6 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -35,6 +38,7 @@ public class Find5Elements {
         for (int i = 0; i < 5; i++) {
             Assertions.assertEquals(givenArticles.get(i), articles.get(i).getText(), "Title Nr." + (i + 1) + "is not correct");
         }
+
         List<String> givenComments = new ArrayList<String>();
         givenComments.add("184");
         givenComments.add("2");
