@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 public class HomePage {
     private BaseFunc baseFunc;
-    private final By ADD_TO = By.xpath(".//button[@aria-label = 'Pievienot']");
+    private  By ADD_TO = By.xpath(".//button[@aria-label = 'Pievienot']");
     public HomePage(BaseFunc baseFunc) {
         this.baseFunc = baseFunc;
 

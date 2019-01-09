@@ -4,8 +4,8 @@ import org.openqa.selenium.By;
 
 public class RegisterPage {
     private BaseFunc baseFunc;
-    private final By REGISTER_FORM = By.id("b-user-register");
-    private final By EMAIL = By.name("email");
+    private  By REGISTER_FORM = By.id("b-user-register");
+    private By EMAIL = By.name("email");
 
     public RegisterPage(BaseFunc baseFunc) {
         this.baseFunc = baseFunc;

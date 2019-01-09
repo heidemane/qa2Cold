@@ -1,13 +1,10 @@
 package barbora;
 
-import barbora.pages.BaseFunc;
-import barbora.pages.HomePage;
-import barbora.pages.LoginPage;
-import barbora.pages.RegisterPage;
+import barbora.pages.*;
 import org.junit.jupiter.api.Test;
 
 public class BarbotaShopTest {
-    private final String HOME_PAGE = "https://www.barbora.lv/";
+    private String HOME_PAGE = "https://www.barbora.lv/";
     private BaseFunc baseFunc = new BaseFunc();
 
     @Test

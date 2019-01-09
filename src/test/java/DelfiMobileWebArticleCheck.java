@@ -10,8 +10,8 @@ import java.util.List;
 
 public class DelfiMobileWebArticleCheck {
 
-    private final By WEBARTICLES = By.xpath(".//a[@class='top2012-title']");
-    private final By MOBARTICLES = By.xpath(".//a[@class='md-scrollpos']");
+    private  By WEBARTICLES = By.xpath(".//a[@class='top2012-title']");
+    private By MOBARTICLES = By.xpath(".//a[@class='md-scrollpos']");
 
     @Test
     public void delfiMobileWebArticleCheck() {

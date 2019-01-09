@@ -6,7 +6,7 @@
 //import org.junit.jupiter.api.Test;
 //
 //public class DelfiWebTest {
-//    private final String HOME_PAGE = "www.delfi.lv/";
+//    private finalhomework String HOME_PAGE = "www.delfi.lv/";
 //    private BaseFunc baseFunc = new BaseFunc();
 //
 //    @Test

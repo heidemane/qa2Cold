@@ -4,9 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 public class HomePage {
-    private final By ARTICLE = By.xpath(".//h3[@class='top2012-title']");
-    private final By TITLE = By.xpath(".//a[@class='top2012-title']");
-    private final By COMMENTS = By.xpath(".//a[@class = 'comment-count']");
+    private  By ARTICLE = By.xpath(".//h3[@class='top2012-title']");
+    private By TITLE = By.xpath(".//a[@class='top2012-title']");
+    private By COMMENTS = By.xpath(".//a[@class = 'comment-count']");
     private BaseFunc baseFunc;
 
     public HomePage(BaseFunc baseFunc) {

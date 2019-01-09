@@ -12,13 +12,13 @@ import java.util.List;
 
 public class WebShopTest {
 
-    private final String SHOP_PAGE = "http://automationpractice.com";
-    private final By WOMEN_BTN = By.xpath("//a[@title = 'Women']");
-    private final By DRESSES_CHECK_BOX = By.xpath(".//label[@for= 'layered_category_8']");
-    private final By ORANGE_COLOR_FILTER = By.xpath(".//label[@for= 'layered_id_attribute_group_13']");
-    private final By FILTERS_SELECTED = By.xpath(".//div[@id = 'enabled_filters']");
-    private final By LOADER = By.xpath(".//ul[@class = 'product_list grid row']/p");
-    private final By LIST_VIEW_ICON = By.className("icon-th-list");
+    private  String SHOP_PAGE = "http://automationpractice.com";
+    private  By WOMEN_BTN = By.xpath("//a[@title = 'Women']");
+    private  By DRESSES_CHECK_BOX = By.xpath(".//label[@for= 'layered_category_8']");
+    private  By ORANGE_COLOR_FILTER = By.xpath(".//label[@for= 'layered_id_attribute_group_13']");
+    private  By FILTERS_SELECTED = By.xpath(".//div[@id = 'enabled_filters']");
+    private  By LOADER = By.xpath(".//ul[@class = 'product_list grid row']/p");
+    private  By LIST_VIEW_ICON = By.className("icon-th-list");
 
     @Test
     public void webShopTestTest() {

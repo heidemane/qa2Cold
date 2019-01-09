@@ -13,8 +13,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Find5Elements {
-    private final By ARTICLE_TITLE = By.xpath(".//a[@class = 'top2012-title']");
-    private final By ARTICLE_COMMENTS = By.xpath(".//a[@class = 'comment-count']");
+    private  By ARTICLE_TITLE = By.xpath(".//a[@class = 'top2012-title']");
+    private  By ARTICLE_COMMENTS = By.xpath(".//a[@class = 'comment-count']");
 
     @Test
     public void find5element() {

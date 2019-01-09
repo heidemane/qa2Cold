@@ -10,14 +10,14 @@ import java.util.List;
 public class Practice {
     //create article locator
     //create comment locator
-    private final By ETHALON_TITLE = By.xpath(".//a[@class = 'top2012-title']");
-    private final By ETHALON_COMMENT_COUNT = By.xpath(".//a[@class = 'comment-count']");
-    private final By ETHALON_TITLE_COMMENT = By.xpath(".//h3[@class = 'top2012-title']");
-    private final By ARTICLE_PAGE_TITLE = By.xpath(".//h1[@class = 'article-title']");
-    private final By ARTICLE_PAGE_COMMENT = By.xpath(".//a[@class = 'comment-count']");
-    private final By COMMENT_PAGE_TITLE = By.xpath(".//a[@class = 'comment-main-title-link']");
-    private final By REGISTRED_COMMENT_COUNT = By.xpath(".//div[@id='comments-listing']/div/a[1]/span");
-    private final By ANONYMOUS_COMMENT_COUNT = By.xpath(".//div[@id='comments-listing']/div/a[2]/span");
+    private  By ETHALON_TITLE = By.xpath(".//a[@class = 'top2012-title']");
+    private  By ETHALON_COMMENT_COUNT = By.xpath(".//a[@class = 'comment-count']");
+    private  By ETHALON_TITLE_COMMENT = By.xpath(".//h3[@class = 'top2012-title']");
+    private  By ARTICLE_PAGE_TITLE = By.xpath(".//h1[@class = 'article-title']");
+    private  By ARTICLE_PAGE_COMMENT = By.xpath(".//a[@class = 'comment-count']");
+    private  By COMMENT_PAGE_TITLE = By.xpath(".//a[@class = 'comment-main-title-link']");
+    private  By REGISTRED_COMMENT_COUNT = By.xpath(".//div[@id='comments-listing']/div/a[1]/span");
+    private  By ANONYMOUS_COMMENT_COUNT = By.xpath(".//div[@id='comments-listing']/div/a[2]/span");
 
     @Test
     public void practice() {
