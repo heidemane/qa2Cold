@@ -3,8 +3,8 @@ Feature: Ticket reservation test
   Scenario: Reservation creation test check
     Given departure city is RIX and arrival city is SFO
     And user data is:
-      | name          | Ieva       |
-      | surname       | Buša       |
+      | name          | Laura      |
+      | surname       | Heidemane  |
       | discount      | ABC        |
       | travelerCount | 1          |
       | childrenCount | 0          |
